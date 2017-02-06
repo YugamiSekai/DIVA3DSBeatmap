@@ -12,3 +12,20 @@ BPM = (num beats in song) * 60 / (num secs in song)
 
 Songs are assumed to be in commom time (4/4), which is needed for input accuracy
 (eighth-note does well, but sixteenth/sixty-fourth is for more complicated beatmaps)
+
+
+For constant press levels:
+Every note should appear in an array.
+
+
+If using sixteenth notes as a input sequence’s precision:
+Array beats = [ 4, 8, 12 ]; // 1st, 2nd, 3rd quarter note
+
+
+For each quarter note, there are four sixteenth notes.  The array above says to detect the first, second and third sixteenth-note of each bar, so each value (quarter note) is multplied by four to get its corresponding value in sixteenth notes.
+
+To calculate note position:
+nth sixteenth-note = (time in secs in song) * BPM * (1/60) * (num_vals_per_beat)
+
+Quoted from Illogictree:
+"Say your song loop is only 10 seconds long but the game has elapsed a total time of 14 seconds. That means the local time of the song loop is 14-10=4 seconds."
