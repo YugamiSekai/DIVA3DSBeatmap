@@ -28,4 +28,14 @@ To calculate note position:
 nth sixteenth-note = (time in secs in song) * BPM * (1/60) * (num_vals_per_beat)
 
 Quoted from Illogictree:
-"Say your song loop is only 10 seconds long but the game has elapsed a total time of 14 seconds. That means the local time of the song loop is 14-10=4 seconds."
+"Every time the user hits a button, you must calculate which note (or which sixteenth note in our funk drum-loop example) the input corresponds to. To calculate that, you must know when, in the local time of the song, the button was pressed. What I mean by local time is the current time in the song that your game state is currently at. Say your song loop is only 10 seconds long but the game has elapsed a total time of 14 seconds. That means the local time of the song loop is 14-10=4 seconds."
+
+Example, we calculate the nth sixteenth note with a local time of 1.5 and a BPM of 50 with 4 sixteenth notes per beat:
+// BPM = 50, secs = 4, num_vals_per_beat = 4
+nth sixteenth-note = (1.5) * 50 * (1/60) * (4) = 5
+
+formula:
+nth sixteenth-note = (time in secs in song) * BPM * (1/60) * (num_vals_per_beat)
+
+
+A buffer can be most likely set with ctrulib's u64 osGetTime(void); (os.h file), since it's virtually impossible to press it at the exact time.
