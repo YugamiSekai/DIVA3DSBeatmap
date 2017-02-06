@@ -1,0 +1,14 @@
+Required for beatmap:
+BPM
+BPS (calculated from BPM)
+
+(if BPM isn't specified already)
+BPM = number of beats in song times 60 divided by the number of seconds in song
+in code:
+BPM = (num beats in song) * 60 / (num secs in song)
+
+"The BPM provides a foundation on which you can start testing for user inputs."
+
+
+Songs are assumed to be in commom time (4/4), which is needed for input accuracy
+(eighth-note does well, but sixteenth/sixty-fourth is for more complicated beatmaps)
