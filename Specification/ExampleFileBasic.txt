@@ -4,8 +4,14 @@
 // Song title
 Song_Title = "Koi wa Sensou"
 
+// BPM
+Song_BPM = 175
+
 // Song length (may not be used in first stable version)
 Song_Length = 2:35
+
+// Song difficulty (EASY, NORMAL, HARD, EXTREME, or EXTRA EXTREME)
+Song_Difficulty = HARD
 
 // The Number of notes
 Note Number = 263
@@ -18,3 +24,9 @@ Note Number = 263
 // type_4 for Regular + Hold Notes (Project DIVA Arcade style)
 // type_5 for Regular + Hold Notes + Sliders (Project DIVA Arcade Future Tone/Future Tone style)
 Note_type = type_1
+
+// Button, Button Position (on grid, x and y value), Button Speed (may have to be split)
+// Circle = 1, Cross = 2, Square = 3, Triangle = 4
+// Ex: 1, x = 4.2, y = 5.4, 1.0
+
+// Lyrics:
