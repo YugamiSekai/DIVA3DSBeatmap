@@ -1,0 +1,20 @@
+// Example DIVA 3DS beatmap header
+// Koi wa Sensou is the example
+
+// Song title
+Song_Title = "Koi wa Sensou"
+
+// Song length (may not be used in first stable version)
+Song_Length = 2:35
+
+// The Number of notes
+Note Number = 263
+
+// Type of notes used
+// type_1 for regular notes only (Project DIVA style)
+// type_2 for Regular + Path notes + arrow notes (Project DIVA 2nd/Extend style)
+// type_3 for Regular + Path notes + arrow notes + Star notes (Project DIVA F/X style)
+// type_3 for Regular + Path notes + arrow notes + Star notes + Double star notes (Project DIVA F2nd style)
+// type_4 for Regular + Hold Notes (Project DIVA Arcade style)
+// type_5 for Regular + Hold Notes + Sliders (Project DIVA Arcade Future Tone/Future Tone style)
+Note_type = type_1
